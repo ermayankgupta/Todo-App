@@ -2,31 +2,31 @@ import React, { useState } from "react";
 import todo from "../image/todo.svg";
 
 const Todo = () => {
-  // const [item, setItem] = useState("");
-  // const [itemlist, setItemList] = useState([]);
+  const [item, setItem] = useState("");
+  const [itemlist, setItemList] = useState([]);
   // const [toggle, setToggle] = useState(true);
   // const [iseditItem, setIsEditItem] = useState(null);
-  // const addItem = () => {
-  //   if (item == "") {
-  //     alert("Please add the item");
-  //   } else if (item && !toggle) {
-  //     setItemList(
-  //       itemlist.map((elem) => {
-  //         if (elem.id == iseditItem) {
-  //           return { ...elem, name: item };
-  //         }
-  //         return elem;
-  //       })
-  //     );
-  //     setToggle(true);
-  //     setItem("");
-  //     setIsEditItem(null);
-  //   } else {
-  //     const allItem = { id: new Date().getTime().toString(), name: item };
-  //     setItemList([...itemlist, allItem]);
-  //     setItem("");
-  //   }
-  // };
+  const addItem = () => {
+    if (item == "") {
+      alert("Please add the item");
+    } else if (item && !toggle) {
+      setItemList(
+        itemlist.map((elem) => {
+          if (elem.id == iseditItem) {
+            return { ...elem, name: item };
+          }
+          return elem;
+        })
+      );
+      setToggle(true);
+      setItem("");
+      setIsEditItem(null);
+    } else {
+      const allItem = { id: new Date().getTime().toString(), name: item };
+      setItemList([...itemlist, allItem]);
+      setItem("");
+    }
+  };
   // const del = (id) => {
   //   const updatedItems = itemlist.filter((elem) => {
   //     return id !== elem.id;
