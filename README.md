@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TO RUN THIS PROJECT IN YOUR SYSTEM
+## Download the project with zip or make a clone using git cli then open that folder in vs code and delete the package-lock.json file and run command npm install on terminal to install all node package used in the project
 
 ## Available Scripts
 
