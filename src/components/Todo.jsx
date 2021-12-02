@@ -36,14 +36,14 @@ const Todo = () => {
   const removeAll = () => {
     setItemList([]);
   };
-  // const editItem = (id) => {
-  //   setToggle(false);
-  //   const edititem = itemlist.find((elem) => {
-  //     return id === elem.id;
-  //   });
-  //   setItem(edititem.name);
-  //   setIsEditItem(id);
-  // };
+  const editItem = (id) => {
+    setToggle(false);
+    const edititem = itemlist.find((elem) => {
+      return id === elem.id;
+    });
+    setItem(edititem.name);
+    setIsEditItem(id);
+  };
 
   return (
     <>
