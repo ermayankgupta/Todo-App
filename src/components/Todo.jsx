@@ -4,8 +4,8 @@ import todo from "../image/todo.svg";
 const Todo = () => {
   const [item, setItem] = useState("");
   const [itemlist, setItemList] = useState([]);
-  // const [toggle, setToggle] = useState(true);
-  // const [iseditItem, setIsEditItem] = useState(null);
+  const [toggle, setToggle] = useState(true);
+  const [iseditItem, setIsEditItem] = useState(null);
   const addItem = () => {
     if (item == "") {
       alert("Please add the item");
@@ -27,15 +27,15 @@ const Todo = () => {
       setItem("");
     }
   };
-  // const del = (id) => {
-  //   const updatedItems = itemlist.filter((elem) => {
-  //     return id !== elem.id;
-  //   });
-  //   setItemList(updatedItems);
-  // };
-  // const removeAll = () => {
-  //   setItemList([]);
-  // };
+  const del = (id) => {
+    const updatedItems = itemlist.filter((elem) => {
+      return id !== elem.id;
+    });
+    setItemList(updatedItems);
+  };
+  const removeAll = () => {
+    setItemList([]);
+  };
   // const editItem = (id) => {
   //   setToggle(false);
   //   const edititem = itemlist.find((elem) => {
