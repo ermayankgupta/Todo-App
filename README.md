@@ -1,6 +1,8 @@
 # TO RUN THIS PROJECT IN YOUR SYSTEM
 ## Download the project with zip or make a clone using git cli then open that folder in vs code and delete the package-lock.json file and run command npm install on terminal to install all node package used in the project
 
+![image](https://user-images.githubusercontent.com/66303109/144378116-b74bd59b-16ab-44af-832c-41c947ad0c74.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
